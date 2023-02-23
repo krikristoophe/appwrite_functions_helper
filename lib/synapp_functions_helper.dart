@@ -14,3 +14,4 @@ export 'src/search_user_by_identifier.dart' show searchUserByIdentifier;
 export 'src/function_wrapper.dart';
 export 'src/models/function_context.dart';
 export 'src/models/function_datas_result.dart';
+export 'src/verify_password.dart' show verifyPassword;

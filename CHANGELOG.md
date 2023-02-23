@@ -18,3 +18,7 @@
 ## 1.0.4
 
 - await in function wrapper exception
+
+## 1.0.5
+
+- add check password argon2
