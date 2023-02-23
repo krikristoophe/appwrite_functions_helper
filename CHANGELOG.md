@@ -22,3 +22,11 @@
 ## 1.0.5
 
 - add check password argon2
+
+## 1.0.6
+
+- is phone already used
+
+## 1.0.7
+
+- phone already used exception

@@ -63,11 +63,16 @@ Future<FunctionResult> functionExceptionWrapper(
       badSecret: (_) => ResultError.fromUnauthenticatedError(
         'bad_secret',
       ),
-      missingFunctionVariable:
-          (MissingFunctionVariable missingFunctionVariable) =>
-              ResultError.fromServerError(
+      missingFunctionVariable: (
+        MissingFunctionVariable missingFunctionVariable,
+      ) =>
+          ResultError.fromServerError(
         'missing_function_variable',
         missingFunctionVariable.variable,
+      ),
+      phoneAlreadyUsed: (PhoneAlreadyUsed value) =>
+          ResultError.fromForbiddenError(
+        'phone_already_used',
       ),
     );
   } catch (e) {

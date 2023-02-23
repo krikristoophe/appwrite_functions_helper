@@ -29,6 +29,7 @@ mixin _$HelperExceptions {
     required TResult Function() userCannotBeLogged,
     required TResult Function() badSecret,
     required TResult Function(String variable) missingFunctionVariable,
+    required TResult Function() phoneAlreadyUsed,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -44,6 +45,7 @@ mixin _$HelperExceptions {
     TResult? Function()? userCannotBeLogged,
     TResult? Function()? badSecret,
     TResult? Function(String variable)? missingFunctionVariable,
+    TResult? Function()? phoneAlreadyUsed,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -59,6 +61,7 @@ mixin _$HelperExceptions {
     TResult Function()? userCannotBeLogged,
     TResult Function()? badSecret,
     TResult Function(String variable)? missingFunctionVariable,
+    TResult Function()? phoneAlreadyUsed,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -78,6 +81,7 @@ mixin _$HelperExceptions {
     required TResult Function(BadSecret value) badSecret,
     required TResult Function(MissingFunctionVariable value)
         missingFunctionVariable,
+    required TResult Function(PhoneAlreadyUsed value) phoneAlreadyUsed,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -93,6 +97,7 @@ mixin _$HelperExceptions {
     TResult? Function(UserCannotBeLogged value)? userCannotBeLogged,
     TResult? Function(BadSecret value)? badSecret,
     TResult? Function(MissingFunctionVariable value)? missingFunctionVariable,
+    TResult? Function(PhoneAlreadyUsed value)? phoneAlreadyUsed,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -108,6 +113,7 @@ mixin _$HelperExceptions {
     TResult Function(UserCannotBeLogged value)? userCannotBeLogged,
     TResult Function(BadSecret value)? badSecret,
     TResult Function(MissingFunctionVariable value)? missingFunctionVariable,
+    TResult Function(PhoneAlreadyUsed value)? phoneAlreadyUsed,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -180,6 +186,7 @@ class _$FailSendingSms implements FailSendingSms {
     required TResult Function() userCannotBeLogged,
     required TResult Function() badSecret,
     required TResult Function(String variable) missingFunctionVariable,
+    required TResult Function() phoneAlreadyUsed,
   }) {
     return failSendingSms();
   }
@@ -198,6 +205,7 @@ class _$FailSendingSms implements FailSendingSms {
     TResult? Function()? userCannotBeLogged,
     TResult? Function()? badSecret,
     TResult? Function(String variable)? missingFunctionVariable,
+    TResult? Function()? phoneAlreadyUsed,
   }) {
     return failSendingSms?.call();
   }
@@ -216,6 +224,7 @@ class _$FailSendingSms implements FailSendingSms {
     TResult Function()? userCannotBeLogged,
     TResult Function()? badSecret,
     TResult Function(String variable)? missingFunctionVariable,
+    TResult Function()? phoneAlreadyUsed,
     required TResult orElse(),
   }) {
     if (failSendingSms != null) {
@@ -241,6 +250,7 @@ class _$FailSendingSms implements FailSendingSms {
     required TResult Function(BadSecret value) badSecret,
     required TResult Function(MissingFunctionVariable value)
         missingFunctionVariable,
+    required TResult Function(PhoneAlreadyUsed value) phoneAlreadyUsed,
   }) {
     return failSendingSms(this);
   }
@@ -259,6 +269,7 @@ class _$FailSendingSms implements FailSendingSms {
     TResult? Function(UserCannotBeLogged value)? userCannotBeLogged,
     TResult? Function(BadSecret value)? badSecret,
     TResult? Function(MissingFunctionVariable value)? missingFunctionVariable,
+    TResult? Function(PhoneAlreadyUsed value)? phoneAlreadyUsed,
   }) {
     return failSendingSms?.call(this);
   }
@@ -277,6 +288,7 @@ class _$FailSendingSms implements FailSendingSms {
     TResult Function(UserCannotBeLogged value)? userCannotBeLogged,
     TResult Function(BadSecret value)? badSecret,
     TResult Function(MissingFunctionVariable value)? missingFunctionVariable,
+    TResult Function(PhoneAlreadyUsed value)? phoneAlreadyUsed,
     required TResult orElse(),
   }) {
     if (failSendingSms != null) {
@@ -339,6 +351,7 @@ class _$FailSendingMail implements FailSendingMail {
     required TResult Function() userCannotBeLogged,
     required TResult Function() badSecret,
     required TResult Function(String variable) missingFunctionVariable,
+    required TResult Function() phoneAlreadyUsed,
   }) {
     return failSendingMail();
   }
@@ -357,6 +370,7 @@ class _$FailSendingMail implements FailSendingMail {
     TResult? Function()? userCannotBeLogged,
     TResult? Function()? badSecret,
     TResult? Function(String variable)? missingFunctionVariable,
+    TResult? Function()? phoneAlreadyUsed,
   }) {
     return failSendingMail?.call();
   }
@@ -375,6 +389,7 @@ class _$FailSendingMail implements FailSendingMail {
     TResult Function()? userCannotBeLogged,
     TResult Function()? badSecret,
     TResult Function(String variable)? missingFunctionVariable,
+    TResult Function()? phoneAlreadyUsed,
     required TResult orElse(),
   }) {
     if (failSendingMail != null) {
@@ -400,6 +415,7 @@ class _$FailSendingMail implements FailSendingMail {
     required TResult Function(BadSecret value) badSecret,
     required TResult Function(MissingFunctionVariable value)
         missingFunctionVariable,
+    required TResult Function(PhoneAlreadyUsed value) phoneAlreadyUsed,
   }) {
     return failSendingMail(this);
   }
@@ -418,6 +434,7 @@ class _$FailSendingMail implements FailSendingMail {
     TResult? Function(UserCannotBeLogged value)? userCannotBeLogged,
     TResult? Function(BadSecret value)? badSecret,
     TResult? Function(MissingFunctionVariable value)? missingFunctionVariable,
+    TResult? Function(PhoneAlreadyUsed value)? phoneAlreadyUsed,
   }) {
     return failSendingMail?.call(this);
   }
@@ -436,6 +453,7 @@ class _$FailSendingMail implements FailSendingMail {
     TResult Function(UserCannotBeLogged value)? userCannotBeLogged,
     TResult Function(BadSecret value)? badSecret,
     TResult Function(MissingFunctionVariable value)? missingFunctionVariable,
+    TResult Function(PhoneAlreadyUsed value)? phoneAlreadyUsed,
     required TResult orElse(),
   }) {
     if (failSendingMail != null) {
@@ -498,6 +516,7 @@ class _$PhoneNotValidated implements PhoneNotValidated {
     required TResult Function() userCannotBeLogged,
     required TResult Function() badSecret,
     required TResult Function(String variable) missingFunctionVariable,
+    required TResult Function() phoneAlreadyUsed,
   }) {
     return phoneNotValidated();
   }
@@ -516,6 +535,7 @@ class _$PhoneNotValidated implements PhoneNotValidated {
     TResult? Function()? userCannotBeLogged,
     TResult? Function()? badSecret,
     TResult? Function(String variable)? missingFunctionVariable,
+    TResult? Function()? phoneAlreadyUsed,
   }) {
     return phoneNotValidated?.call();
   }
@@ -534,6 +554,7 @@ class _$PhoneNotValidated implements PhoneNotValidated {
     TResult Function()? userCannotBeLogged,
     TResult Function()? badSecret,
     TResult Function(String variable)? missingFunctionVariable,
+    TResult Function()? phoneAlreadyUsed,
     required TResult orElse(),
   }) {
     if (phoneNotValidated != null) {
@@ -559,6 +580,7 @@ class _$PhoneNotValidated implements PhoneNotValidated {
     required TResult Function(BadSecret value) badSecret,
     required TResult Function(MissingFunctionVariable value)
         missingFunctionVariable,
+    required TResult Function(PhoneAlreadyUsed value) phoneAlreadyUsed,
   }) {
     return phoneNotValidated(this);
   }
@@ -577,6 +599,7 @@ class _$PhoneNotValidated implements PhoneNotValidated {
     TResult? Function(UserCannotBeLogged value)? userCannotBeLogged,
     TResult? Function(BadSecret value)? badSecret,
     TResult? Function(MissingFunctionVariable value)? missingFunctionVariable,
+    TResult? Function(PhoneAlreadyUsed value)? phoneAlreadyUsed,
   }) {
     return phoneNotValidated?.call(this);
   }
@@ -595,6 +618,7 @@ class _$PhoneNotValidated implements PhoneNotValidated {
     TResult Function(UserCannotBeLogged value)? userCannotBeLogged,
     TResult Function(BadSecret value)? badSecret,
     TResult Function(MissingFunctionVariable value)? missingFunctionVariable,
+    TResult Function(PhoneAlreadyUsed value)? phoneAlreadyUsed,
     required TResult orElse(),
   }) {
     if (phoneNotValidated != null) {
@@ -657,6 +681,7 @@ class _$EmailNotValidated implements EmailNotValidated {
     required TResult Function() userCannotBeLogged,
     required TResult Function() badSecret,
     required TResult Function(String variable) missingFunctionVariable,
+    required TResult Function() phoneAlreadyUsed,
   }) {
     return emailNotValidated();
   }
@@ -675,6 +700,7 @@ class _$EmailNotValidated implements EmailNotValidated {
     TResult? Function()? userCannotBeLogged,
     TResult? Function()? badSecret,
     TResult? Function(String variable)? missingFunctionVariable,
+    TResult? Function()? phoneAlreadyUsed,
   }) {
     return emailNotValidated?.call();
   }
@@ -693,6 +719,7 @@ class _$EmailNotValidated implements EmailNotValidated {
     TResult Function()? userCannotBeLogged,
     TResult Function()? badSecret,
     TResult Function(String variable)? missingFunctionVariable,
+    TResult Function()? phoneAlreadyUsed,
     required TResult orElse(),
   }) {
     if (emailNotValidated != null) {
@@ -718,6 +745,7 @@ class _$EmailNotValidated implements EmailNotValidated {
     required TResult Function(BadSecret value) badSecret,
     required TResult Function(MissingFunctionVariable value)
         missingFunctionVariable,
+    required TResult Function(PhoneAlreadyUsed value) phoneAlreadyUsed,
   }) {
     return emailNotValidated(this);
   }
@@ -736,6 +764,7 @@ class _$EmailNotValidated implements EmailNotValidated {
     TResult? Function(UserCannotBeLogged value)? userCannotBeLogged,
     TResult? Function(BadSecret value)? badSecret,
     TResult? Function(MissingFunctionVariable value)? missingFunctionVariable,
+    TResult? Function(PhoneAlreadyUsed value)? phoneAlreadyUsed,
   }) {
     return emailNotValidated?.call(this);
   }
@@ -754,6 +783,7 @@ class _$EmailNotValidated implements EmailNotValidated {
     TResult Function(UserCannotBeLogged value)? userCannotBeLogged,
     TResult Function(BadSecret value)? badSecret,
     TResult Function(MissingFunctionVariable value)? missingFunctionVariable,
+    TResult Function(PhoneAlreadyUsed value)? phoneAlreadyUsed,
     required TResult orElse(),
   }) {
     if (emailNotValidated != null) {
@@ -816,6 +846,7 @@ class _$BadCredentials implements BadCredentials {
     required TResult Function() userCannotBeLogged,
     required TResult Function() badSecret,
     required TResult Function(String variable) missingFunctionVariable,
+    required TResult Function() phoneAlreadyUsed,
   }) {
     return badCredentials();
   }
@@ -834,6 +865,7 @@ class _$BadCredentials implements BadCredentials {
     TResult? Function()? userCannotBeLogged,
     TResult? Function()? badSecret,
     TResult? Function(String variable)? missingFunctionVariable,
+    TResult? Function()? phoneAlreadyUsed,
   }) {
     return badCredentials?.call();
   }
@@ -852,6 +884,7 @@ class _$BadCredentials implements BadCredentials {
     TResult Function()? userCannotBeLogged,
     TResult Function()? badSecret,
     TResult Function(String variable)? missingFunctionVariable,
+    TResult Function()? phoneAlreadyUsed,
     required TResult orElse(),
   }) {
     if (badCredentials != null) {
@@ -877,6 +910,7 @@ class _$BadCredentials implements BadCredentials {
     required TResult Function(BadSecret value) badSecret,
     required TResult Function(MissingFunctionVariable value)
         missingFunctionVariable,
+    required TResult Function(PhoneAlreadyUsed value) phoneAlreadyUsed,
   }) {
     return badCredentials(this);
   }
@@ -895,6 +929,7 @@ class _$BadCredentials implements BadCredentials {
     TResult? Function(UserCannotBeLogged value)? userCannotBeLogged,
     TResult? Function(BadSecret value)? badSecret,
     TResult? Function(MissingFunctionVariable value)? missingFunctionVariable,
+    TResult? Function(PhoneAlreadyUsed value)? phoneAlreadyUsed,
   }) {
     return badCredentials?.call(this);
   }
@@ -913,6 +948,7 @@ class _$BadCredentials implements BadCredentials {
     TResult Function(UserCannotBeLogged value)? userCannotBeLogged,
     TResult Function(BadSecret value)? badSecret,
     TResult Function(MissingFunctionVariable value)? missingFunctionVariable,
+    TResult Function(PhoneAlreadyUsed value)? phoneAlreadyUsed,
     required TResult orElse(),
   }) {
     if (badCredentials != null) {
@@ -975,6 +1011,7 @@ class _$BadPayloadFormat implements BadPayloadFormat {
     required TResult Function() userCannotBeLogged,
     required TResult Function() badSecret,
     required TResult Function(String variable) missingFunctionVariable,
+    required TResult Function() phoneAlreadyUsed,
   }) {
     return badPayloadFormat();
   }
@@ -993,6 +1030,7 @@ class _$BadPayloadFormat implements BadPayloadFormat {
     TResult? Function()? userCannotBeLogged,
     TResult? Function()? badSecret,
     TResult? Function(String variable)? missingFunctionVariable,
+    TResult? Function()? phoneAlreadyUsed,
   }) {
     return badPayloadFormat?.call();
   }
@@ -1011,6 +1049,7 @@ class _$BadPayloadFormat implements BadPayloadFormat {
     TResult Function()? userCannotBeLogged,
     TResult Function()? badSecret,
     TResult Function(String variable)? missingFunctionVariable,
+    TResult Function()? phoneAlreadyUsed,
     required TResult orElse(),
   }) {
     if (badPayloadFormat != null) {
@@ -1036,6 +1075,7 @@ class _$BadPayloadFormat implements BadPayloadFormat {
     required TResult Function(BadSecret value) badSecret,
     required TResult Function(MissingFunctionVariable value)
         missingFunctionVariable,
+    required TResult Function(PhoneAlreadyUsed value) phoneAlreadyUsed,
   }) {
     return badPayloadFormat(this);
   }
@@ -1054,6 +1094,7 @@ class _$BadPayloadFormat implements BadPayloadFormat {
     TResult? Function(UserCannotBeLogged value)? userCannotBeLogged,
     TResult? Function(BadSecret value)? badSecret,
     TResult? Function(MissingFunctionVariable value)? missingFunctionVariable,
+    TResult? Function(PhoneAlreadyUsed value)? phoneAlreadyUsed,
   }) {
     return badPayloadFormat?.call(this);
   }
@@ -1072,6 +1113,7 @@ class _$BadPayloadFormat implements BadPayloadFormat {
     TResult Function(UserCannotBeLogged value)? userCannotBeLogged,
     TResult Function(BadSecret value)? badSecret,
     TResult Function(MissingFunctionVariable value)? missingFunctionVariable,
+    TResult Function(PhoneAlreadyUsed value)? phoneAlreadyUsed,
     required TResult orElse(),
   }) {
     if (badPayloadFormat != null) {
@@ -1162,6 +1204,7 @@ class _$MissingPayloadParameter implements MissingPayloadParameter {
     required TResult Function() userCannotBeLogged,
     required TResult Function() badSecret,
     required TResult Function(String variable) missingFunctionVariable,
+    required TResult Function() phoneAlreadyUsed,
   }) {
     return missingPayloadParameter(parameter);
   }
@@ -1180,6 +1223,7 @@ class _$MissingPayloadParameter implements MissingPayloadParameter {
     TResult? Function()? userCannotBeLogged,
     TResult? Function()? badSecret,
     TResult? Function(String variable)? missingFunctionVariable,
+    TResult? Function()? phoneAlreadyUsed,
   }) {
     return missingPayloadParameter?.call(parameter);
   }
@@ -1198,6 +1242,7 @@ class _$MissingPayloadParameter implements MissingPayloadParameter {
     TResult Function()? userCannotBeLogged,
     TResult Function()? badSecret,
     TResult Function(String variable)? missingFunctionVariable,
+    TResult Function()? phoneAlreadyUsed,
     required TResult orElse(),
   }) {
     if (missingPayloadParameter != null) {
@@ -1223,6 +1268,7 @@ class _$MissingPayloadParameter implements MissingPayloadParameter {
     required TResult Function(BadSecret value) badSecret,
     required TResult Function(MissingFunctionVariable value)
         missingFunctionVariable,
+    required TResult Function(PhoneAlreadyUsed value) phoneAlreadyUsed,
   }) {
     return missingPayloadParameter(this);
   }
@@ -1241,6 +1287,7 @@ class _$MissingPayloadParameter implements MissingPayloadParameter {
     TResult? Function(UserCannotBeLogged value)? userCannotBeLogged,
     TResult? Function(BadSecret value)? badSecret,
     TResult? Function(MissingFunctionVariable value)? missingFunctionVariable,
+    TResult? Function(PhoneAlreadyUsed value)? phoneAlreadyUsed,
   }) {
     return missingPayloadParameter?.call(this);
   }
@@ -1259,6 +1306,7 @@ class _$MissingPayloadParameter implements MissingPayloadParameter {
     TResult Function(UserCannotBeLogged value)? userCannotBeLogged,
     TResult Function(BadSecret value)? badSecret,
     TResult Function(MissingFunctionVariable value)? missingFunctionVariable,
+    TResult Function(PhoneAlreadyUsed value)? phoneAlreadyUsed,
     required TResult orElse(),
   }) {
     if (missingPayloadParameter != null) {
@@ -1354,6 +1402,7 @@ class _$UnsuportedLoginMethod implements UnsuportedLoginMethod {
     required TResult Function() userCannotBeLogged,
     required TResult Function() badSecret,
     required TResult Function(String variable) missingFunctionVariable,
+    required TResult Function() phoneAlreadyUsed,
   }) {
     return unsuportedLoginMethod(method);
   }
@@ -1372,6 +1421,7 @@ class _$UnsuportedLoginMethod implements UnsuportedLoginMethod {
     TResult? Function()? userCannotBeLogged,
     TResult? Function()? badSecret,
     TResult? Function(String variable)? missingFunctionVariable,
+    TResult? Function()? phoneAlreadyUsed,
   }) {
     return unsuportedLoginMethod?.call(method);
   }
@@ -1390,6 +1440,7 @@ class _$UnsuportedLoginMethod implements UnsuportedLoginMethod {
     TResult Function()? userCannotBeLogged,
     TResult Function()? badSecret,
     TResult Function(String variable)? missingFunctionVariable,
+    TResult Function()? phoneAlreadyUsed,
     required TResult orElse(),
   }) {
     if (unsuportedLoginMethod != null) {
@@ -1415,6 +1466,7 @@ class _$UnsuportedLoginMethod implements UnsuportedLoginMethod {
     required TResult Function(BadSecret value) badSecret,
     required TResult Function(MissingFunctionVariable value)
         missingFunctionVariable,
+    required TResult Function(PhoneAlreadyUsed value) phoneAlreadyUsed,
   }) {
     return unsuportedLoginMethod(this);
   }
@@ -1433,6 +1485,7 @@ class _$UnsuportedLoginMethod implements UnsuportedLoginMethod {
     TResult? Function(UserCannotBeLogged value)? userCannotBeLogged,
     TResult? Function(BadSecret value)? badSecret,
     TResult? Function(MissingFunctionVariable value)? missingFunctionVariable,
+    TResult? Function(PhoneAlreadyUsed value)? phoneAlreadyUsed,
   }) {
     return unsuportedLoginMethod?.call(this);
   }
@@ -1451,6 +1504,7 @@ class _$UnsuportedLoginMethod implements UnsuportedLoginMethod {
     TResult Function(UserCannotBeLogged value)? userCannotBeLogged,
     TResult Function(BadSecret value)? badSecret,
     TResult Function(MissingFunctionVariable value)? missingFunctionVariable,
+    TResult Function(PhoneAlreadyUsed value)? phoneAlreadyUsed,
     required TResult orElse(),
   }) {
     if (unsuportedLoginMethod != null) {
@@ -1519,6 +1573,7 @@ class _$UserCannotBeLogged implements UserCannotBeLogged {
     required TResult Function() userCannotBeLogged,
     required TResult Function() badSecret,
     required TResult Function(String variable) missingFunctionVariable,
+    required TResult Function() phoneAlreadyUsed,
   }) {
     return userCannotBeLogged();
   }
@@ -1537,6 +1592,7 @@ class _$UserCannotBeLogged implements UserCannotBeLogged {
     TResult? Function()? userCannotBeLogged,
     TResult? Function()? badSecret,
     TResult? Function(String variable)? missingFunctionVariable,
+    TResult? Function()? phoneAlreadyUsed,
   }) {
     return userCannotBeLogged?.call();
   }
@@ -1555,6 +1611,7 @@ class _$UserCannotBeLogged implements UserCannotBeLogged {
     TResult Function()? userCannotBeLogged,
     TResult Function()? badSecret,
     TResult Function(String variable)? missingFunctionVariable,
+    TResult Function()? phoneAlreadyUsed,
     required TResult orElse(),
   }) {
     if (userCannotBeLogged != null) {
@@ -1580,6 +1637,7 @@ class _$UserCannotBeLogged implements UserCannotBeLogged {
     required TResult Function(BadSecret value) badSecret,
     required TResult Function(MissingFunctionVariable value)
         missingFunctionVariable,
+    required TResult Function(PhoneAlreadyUsed value) phoneAlreadyUsed,
   }) {
     return userCannotBeLogged(this);
   }
@@ -1598,6 +1656,7 @@ class _$UserCannotBeLogged implements UserCannotBeLogged {
     TResult? Function(UserCannotBeLogged value)? userCannotBeLogged,
     TResult? Function(BadSecret value)? badSecret,
     TResult? Function(MissingFunctionVariable value)? missingFunctionVariable,
+    TResult? Function(PhoneAlreadyUsed value)? phoneAlreadyUsed,
   }) {
     return userCannotBeLogged?.call(this);
   }
@@ -1616,6 +1675,7 @@ class _$UserCannotBeLogged implements UserCannotBeLogged {
     TResult Function(UserCannotBeLogged value)? userCannotBeLogged,
     TResult Function(BadSecret value)? badSecret,
     TResult Function(MissingFunctionVariable value)? missingFunctionVariable,
+    TResult Function(PhoneAlreadyUsed value)? phoneAlreadyUsed,
     required TResult orElse(),
   }) {
     if (userCannotBeLogged != null) {
@@ -1678,6 +1738,7 @@ class _$BadSecret implements BadSecret {
     required TResult Function() userCannotBeLogged,
     required TResult Function() badSecret,
     required TResult Function(String variable) missingFunctionVariable,
+    required TResult Function() phoneAlreadyUsed,
   }) {
     return badSecret();
   }
@@ -1696,6 +1757,7 @@ class _$BadSecret implements BadSecret {
     TResult? Function()? userCannotBeLogged,
     TResult? Function()? badSecret,
     TResult? Function(String variable)? missingFunctionVariable,
+    TResult? Function()? phoneAlreadyUsed,
   }) {
     return badSecret?.call();
   }
@@ -1714,6 +1776,7 @@ class _$BadSecret implements BadSecret {
     TResult Function()? userCannotBeLogged,
     TResult Function()? badSecret,
     TResult Function(String variable)? missingFunctionVariable,
+    TResult Function()? phoneAlreadyUsed,
     required TResult orElse(),
   }) {
     if (badSecret != null) {
@@ -1739,6 +1802,7 @@ class _$BadSecret implements BadSecret {
     required TResult Function(BadSecret value) badSecret,
     required TResult Function(MissingFunctionVariable value)
         missingFunctionVariable,
+    required TResult Function(PhoneAlreadyUsed value) phoneAlreadyUsed,
   }) {
     return badSecret(this);
   }
@@ -1757,6 +1821,7 @@ class _$BadSecret implements BadSecret {
     TResult? Function(UserCannotBeLogged value)? userCannotBeLogged,
     TResult? Function(BadSecret value)? badSecret,
     TResult? Function(MissingFunctionVariable value)? missingFunctionVariable,
+    TResult? Function(PhoneAlreadyUsed value)? phoneAlreadyUsed,
   }) {
     return badSecret?.call(this);
   }
@@ -1775,6 +1840,7 @@ class _$BadSecret implements BadSecret {
     TResult Function(UserCannotBeLogged value)? userCannotBeLogged,
     TResult Function(BadSecret value)? badSecret,
     TResult Function(MissingFunctionVariable value)? missingFunctionVariable,
+    TResult Function(PhoneAlreadyUsed value)? phoneAlreadyUsed,
     required TResult orElse(),
   }) {
     if (badSecret != null) {
@@ -1865,6 +1931,7 @@ class _$MissingFunctionVariable implements MissingFunctionVariable {
     required TResult Function() userCannotBeLogged,
     required TResult Function() badSecret,
     required TResult Function(String variable) missingFunctionVariable,
+    required TResult Function() phoneAlreadyUsed,
   }) {
     return missingFunctionVariable(variable);
   }
@@ -1883,6 +1950,7 @@ class _$MissingFunctionVariable implements MissingFunctionVariable {
     TResult? Function()? userCannotBeLogged,
     TResult? Function()? badSecret,
     TResult? Function(String variable)? missingFunctionVariable,
+    TResult? Function()? phoneAlreadyUsed,
   }) {
     return missingFunctionVariable?.call(variable);
   }
@@ -1901,6 +1969,7 @@ class _$MissingFunctionVariable implements MissingFunctionVariable {
     TResult Function()? userCannotBeLogged,
     TResult Function()? badSecret,
     TResult Function(String variable)? missingFunctionVariable,
+    TResult Function()? phoneAlreadyUsed,
     required TResult orElse(),
   }) {
     if (missingFunctionVariable != null) {
@@ -1926,6 +1995,7 @@ class _$MissingFunctionVariable implements MissingFunctionVariable {
     required TResult Function(BadSecret value) badSecret,
     required TResult Function(MissingFunctionVariable value)
         missingFunctionVariable,
+    required TResult Function(PhoneAlreadyUsed value) phoneAlreadyUsed,
   }) {
     return missingFunctionVariable(this);
   }
@@ -1944,6 +2014,7 @@ class _$MissingFunctionVariable implements MissingFunctionVariable {
     TResult? Function(UserCannotBeLogged value)? userCannotBeLogged,
     TResult? Function(BadSecret value)? badSecret,
     TResult? Function(MissingFunctionVariable value)? missingFunctionVariable,
+    TResult? Function(PhoneAlreadyUsed value)? phoneAlreadyUsed,
   }) {
     return missingFunctionVariable?.call(this);
   }
@@ -1962,6 +2033,7 @@ class _$MissingFunctionVariable implements MissingFunctionVariable {
     TResult Function(UserCannotBeLogged value)? userCannotBeLogged,
     TResult Function(BadSecret value)? badSecret,
     TResult Function(MissingFunctionVariable value)? missingFunctionVariable,
+    TResult Function(PhoneAlreadyUsed value)? phoneAlreadyUsed,
     required TResult orElse(),
   }) {
     if (missingFunctionVariable != null) {
@@ -1979,4 +2051,169 @@ abstract class MissingFunctionVariable implements HelperExceptions {
   @JsonKey(ignore: true)
   _$$MissingFunctionVariableCopyWith<_$MissingFunctionVariable> get copyWith =>
       throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$PhoneAlreadyUsedCopyWith<$Res> {
+  factory _$$PhoneAlreadyUsedCopyWith(
+          _$PhoneAlreadyUsed value, $Res Function(_$PhoneAlreadyUsed) then) =
+      __$$PhoneAlreadyUsedCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$PhoneAlreadyUsedCopyWithImpl<$Res>
+    extends _$HelperExceptionsCopyWithImpl<$Res, _$PhoneAlreadyUsed>
+    implements _$$PhoneAlreadyUsedCopyWith<$Res> {
+  __$$PhoneAlreadyUsedCopyWithImpl(
+      _$PhoneAlreadyUsed _value, $Res Function(_$PhoneAlreadyUsed) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$PhoneAlreadyUsed implements PhoneAlreadyUsed {
+  const _$PhoneAlreadyUsed();
+
+  @override
+  String toString() {
+    return 'HelperExceptions.phoneAlreadyUsed()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$PhoneAlreadyUsed);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() failSendingSms,
+    required TResult Function() failSendingMail,
+    required TResult Function() phoneNotValidated,
+    required TResult Function() emailNotValidated,
+    required TResult Function() badCredentials,
+    required TResult Function() badPayloadFormat,
+    required TResult Function(String parameter) missingPayloadParameter,
+    required TResult Function(String method) unsuportedLoginMethod,
+    required TResult Function() userCannotBeLogged,
+    required TResult Function() badSecret,
+    required TResult Function(String variable) missingFunctionVariable,
+    required TResult Function() phoneAlreadyUsed,
+  }) {
+    return phoneAlreadyUsed();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? failSendingSms,
+    TResult? Function()? failSendingMail,
+    TResult? Function()? phoneNotValidated,
+    TResult? Function()? emailNotValidated,
+    TResult? Function()? badCredentials,
+    TResult? Function()? badPayloadFormat,
+    TResult? Function(String parameter)? missingPayloadParameter,
+    TResult? Function(String method)? unsuportedLoginMethod,
+    TResult? Function()? userCannotBeLogged,
+    TResult? Function()? badSecret,
+    TResult? Function(String variable)? missingFunctionVariable,
+    TResult? Function()? phoneAlreadyUsed,
+  }) {
+    return phoneAlreadyUsed?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? failSendingSms,
+    TResult Function()? failSendingMail,
+    TResult Function()? phoneNotValidated,
+    TResult Function()? emailNotValidated,
+    TResult Function()? badCredentials,
+    TResult Function()? badPayloadFormat,
+    TResult Function(String parameter)? missingPayloadParameter,
+    TResult Function(String method)? unsuportedLoginMethod,
+    TResult Function()? userCannotBeLogged,
+    TResult Function()? badSecret,
+    TResult Function(String variable)? missingFunctionVariable,
+    TResult Function()? phoneAlreadyUsed,
+    required TResult orElse(),
+  }) {
+    if (phoneAlreadyUsed != null) {
+      return phoneAlreadyUsed();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(FailSendingSms value) failSendingSms,
+    required TResult Function(FailSendingMail value) failSendingMail,
+    required TResult Function(PhoneNotValidated value) phoneNotValidated,
+    required TResult Function(EmailNotValidated value) emailNotValidated,
+    required TResult Function(BadCredentials value) badCredentials,
+    required TResult Function(BadPayloadFormat value) badPayloadFormat,
+    required TResult Function(MissingPayloadParameter value)
+        missingPayloadParameter,
+    required TResult Function(UnsuportedLoginMethod value)
+        unsuportedLoginMethod,
+    required TResult Function(UserCannotBeLogged value) userCannotBeLogged,
+    required TResult Function(BadSecret value) badSecret,
+    required TResult Function(MissingFunctionVariable value)
+        missingFunctionVariable,
+    required TResult Function(PhoneAlreadyUsed value) phoneAlreadyUsed,
+  }) {
+    return phoneAlreadyUsed(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(FailSendingSms value)? failSendingSms,
+    TResult? Function(FailSendingMail value)? failSendingMail,
+    TResult? Function(PhoneNotValidated value)? phoneNotValidated,
+    TResult? Function(EmailNotValidated value)? emailNotValidated,
+    TResult? Function(BadCredentials value)? badCredentials,
+    TResult? Function(BadPayloadFormat value)? badPayloadFormat,
+    TResult? Function(MissingPayloadParameter value)? missingPayloadParameter,
+    TResult? Function(UnsuportedLoginMethod value)? unsuportedLoginMethod,
+    TResult? Function(UserCannotBeLogged value)? userCannotBeLogged,
+    TResult? Function(BadSecret value)? badSecret,
+    TResult? Function(MissingFunctionVariable value)? missingFunctionVariable,
+    TResult? Function(PhoneAlreadyUsed value)? phoneAlreadyUsed,
+  }) {
+    return phoneAlreadyUsed?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(FailSendingSms value)? failSendingSms,
+    TResult Function(FailSendingMail value)? failSendingMail,
+    TResult Function(PhoneNotValidated value)? phoneNotValidated,
+    TResult Function(EmailNotValidated value)? emailNotValidated,
+    TResult Function(BadCredentials value)? badCredentials,
+    TResult Function(BadPayloadFormat value)? badPayloadFormat,
+    TResult Function(MissingPayloadParameter value)? missingPayloadParameter,
+    TResult Function(UnsuportedLoginMethod value)? unsuportedLoginMethod,
+    TResult Function(UserCannotBeLogged value)? userCannotBeLogged,
+    TResult Function(BadSecret value)? badSecret,
+    TResult Function(MissingFunctionVariable value)? missingFunctionVariable,
+    TResult Function(PhoneAlreadyUsed value)? phoneAlreadyUsed,
+    required TResult orElse(),
+  }) {
+    if (phoneAlreadyUsed != null) {
+      return phoneAlreadyUsed(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class PhoneAlreadyUsed implements HelperExceptions {
+  const factory PhoneAlreadyUsed() = _$PhoneAlreadyUsed;
 }

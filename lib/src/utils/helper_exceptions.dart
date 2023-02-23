@@ -16,4 +16,5 @@ class HelperExceptions with _$HelperExceptions implements Exception {
   const factory HelperExceptions.userCannotBeLogged() = UserCannotBeLogged;
   const factory HelperExceptions.badSecret() = BadSecret;
   const factory HelperExceptions.missingFunctionVariable(String variable) = MissingFunctionVariable;
+  const factory HelperExceptions.phoneAlreadyUsed() = PhoneAlreadyUsed;
 }

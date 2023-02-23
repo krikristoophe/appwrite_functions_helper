@@ -15,3 +15,4 @@ export 'src/function_wrapper.dart';
 export 'src/models/function_context.dart';
 export 'src/models/function_datas_result.dart';
 export 'src/verify_password.dart' show verifyPassword;
+export 'src/is_phone_already_used.dart' show isPhoneAlreadyUsed;
