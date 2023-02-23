@@ -10,8 +10,8 @@ Future<FunctionDatasResult> callback(FunctionContext context) async {
   );
 }
 
-void start(final req, final res) {
-  functionWrapper(
+Future<void> start(final req, final res) {
+  return functionWrapper(
     req,
     res,
     Services.values,

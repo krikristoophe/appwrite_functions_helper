@@ -12,7 +12,7 @@ enum Services {
 
 typedef FunctionCallback = Future<FunctionDatasResult> Function(FunctionContext);
 
-void functionWrapper(
+Future<void> functionWrapper(
   final req,
   final res,
   List<Services> services,

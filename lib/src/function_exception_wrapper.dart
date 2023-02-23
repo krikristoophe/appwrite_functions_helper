@@ -1,5 +1,6 @@
 import 'package:synapp_functions_helper/src/function_wrapper.dart';
 import 'package:synapp_functions_helper/src/models/function_context.dart';
+import 'package:synapp_functions_helper/src/models/function_datas_result.dart';
 import 'package:synapp_functions_helper/src/models/function_result.dart';
 import 'package:synapp_functions_helper/src/models/result_error.dart';
 import 'package:synapp_functions_helper/src/utils/create_function_context.dart';
@@ -21,7 +22,9 @@ Future<FunctionResult> functionExceptionWrapper(
       requiredPayloadVariables,
     );
 
-    return callback(context);
+    FunctionDatasResult result = await callback(context);
+
+    return result;
   } on HelperExceptions catch (e) {
     return e.map(
       failSendingSms: (_) => ResultError.fromServerError(
