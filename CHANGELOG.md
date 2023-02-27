@@ -30,3 +30,15 @@
 ## 1.0.7
 
 - phone already used exception
+
+## 1.0.8
+
+- add prints
+
+## 1.0.9
+
+- change status code
+
+## 1.0.10
+
+- add status code in response

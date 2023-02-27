@@ -35,6 +35,7 @@ Future<void> functionWrapper(
         'success': false,
         'error_code': result.errorCode,
         'error_details': result.details,
+        'status': result.statusCode,
       },
       status: result.statusCode,
     );
@@ -43,6 +44,7 @@ Future<void> functionWrapper(
       {
         'success': true,
         'datas': result.datas,
+        'status': 200,
       },
       status: 200,
     );
