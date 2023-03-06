@@ -1,6 +1,4 @@
-
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:mailer/smtp_server.dart';
 
 part 'smtp_variables.freezed.dart';
 part 'smtp_variables.g.dart';
@@ -10,35 +8,20 @@ class SmtpVariables with _$SmtpVariables {
   const SmtpVariables._();
 
   const factory SmtpVariables({
-    @JsonKey(name: 'SMTP_HOST') required String host,
-    @JsonKey(name: 'SMTP_PORT', fromJson: SmtpVariables._stringFromInt) required int port,
-    @JsonKey(name: 'SMTP_USER') required String user,
-    @JsonKey(name: 'SMTP_PASSWORD') required String password,
-    @JsonKey(name: 'SMTP_FROM_ADDRESS') required String senderAddress,
-    @JsonKey(name: 'SMTP_FROM_NAME') required String senderName,
-    @Default(false) bool ssl,
-    @Default(true) bool allowInsecure,
+    @JsonKey(name: 'SENDGRID_API_URL') required String sendgridApi,
+    @JsonKey(name: 'SENDGRID_API_KEY') required String sendgridApiKey,
+    @JsonKey(name: 'SMTP_FROM_ADDRESS') required String fromAddress,
   }) = _SmtpVariables;
 
-  factory SmtpVariables.fromJson(Map<String, dynamic> json) => _$SmtpVariablesFromJson(json);
+  factory SmtpVariables.fromJson(Map<String, dynamic> json) =>
+      _$SmtpVariablesFromJson(json);
 
   static const List<String> requiredVariables = [
-    'SMTP_HOST',
-    'SMTP_PORT',
-    'SMTP_USER',
-    'SMTP_PASSWORD',
+    'SENDGRID_API_URL',
+    'SENDGRID_API_KEY',
     'SMTP_FROM_ADDRESS',
-    'SMTP_FROM_NAME',
   ];
 
-  SmtpServer get server => SmtpServer(
-    host,
-    port: port,
-    username: user,
-    password: password,
-    ssl: false,
-    allowInsecure: true,
-  );
-
-  static int _stringFromInt(String number) => int.parse(number);
+  static const String validationCodeTemplateId =
+      'd-8c55e71cb5374b96bd2d8bfc623a49a9';
 }

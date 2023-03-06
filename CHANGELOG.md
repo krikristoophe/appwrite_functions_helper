@@ -42,3 +42,11 @@
 ## 1.0.10
 
 - add status code in response
+
+## 1.0.11
+
+- change email to template
+
+## 1.0.12
+
+- publish generated code

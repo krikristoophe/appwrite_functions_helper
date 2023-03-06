@@ -16,3 +16,4 @@ export 'src/models/function_context.dart';
 export 'src/models/function_datas_result.dart';
 export 'src/verify_password.dart' show verifyPassword;
 export 'src/is_phone_already_used.dart' show isPhoneAlreadyUsed;
+export 'src/models/email_validation_code_datas.dart' show EmailValidationCodeDatas;
