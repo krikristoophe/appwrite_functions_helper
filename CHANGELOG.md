@@ -50,3 +50,7 @@
 ## 1.0.12
 
 - publish generated code
+
+## 1.0.13
+
+- add contact exceptions

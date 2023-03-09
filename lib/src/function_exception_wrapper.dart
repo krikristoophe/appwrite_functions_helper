@@ -74,6 +74,18 @@ Future<FunctionResult> functionExceptionWrapper(
           ResultError.fromForbiddenError(
         'phone_already_used',
       ),
+      userAlreadyInContact: (UserAlreadyInContact value) =>
+          ResultError.fromBadRequestError(
+        'user_already_in_contact',
+      ),
+      userHasAlreadyInvitation: (UserHasAlreadyInvitation value) =>
+          ResultError.fromBadRequestError(
+        'user_has_already_invitation',
+      ),
+      userNotInContact: (UserNotInContact value) =>
+          ResultError.fromBadRequestError(
+        'user_not_in_contact',
+      ),
     );
   } catch (e) {
     return ResultError.fromServerError(
