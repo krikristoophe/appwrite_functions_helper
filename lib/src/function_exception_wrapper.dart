@@ -86,6 +86,12 @@ Future<FunctionResult> functionExceptionWrapper(
           ResultError.fromBadRequestError(
         'user_not_in_contact',
       ),
+      cantSetContactInvitationResult: (CantSetContactInvitationResult value) =>
+          ResultError.fromForbiddenError(
+        'cant_set_contact_invitation_result',
+      ), emailAlreadyUsed: (EmailAlreadyUsed value) => ResultError.fromForbiddenError(
+        'email_already_used',
+      ),
     );
   } catch (e) {
     return ResultError.fromServerError(

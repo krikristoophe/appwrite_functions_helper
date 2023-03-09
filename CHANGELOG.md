@@ -54,3 +54,15 @@
 ## 1.0.13
 
 - add contact exceptions
+
+## 1.0.14
+
+- publish generated code
+
+## 1.0.15
+
+- add exception
+
+## 1.0.16
+
+- add email already used exception

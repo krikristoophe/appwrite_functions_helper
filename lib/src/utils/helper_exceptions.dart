@@ -17,8 +17,11 @@ class HelperExceptions with _$HelperExceptions implements Exception {
   const factory HelperExceptions.badSecret() = BadSecret;
   const factory HelperExceptions.missingFunctionVariable(String variable) = MissingFunctionVariable;
   const factory HelperExceptions.phoneAlreadyUsed() = PhoneAlreadyUsed;
+  const factory HelperExceptions.emailAlreadyUsed() = EmailAlreadyUsed;
 
   const factory HelperExceptions.userHasAlreadyInvitation() = UserHasAlreadyInvitation;
   const factory HelperExceptions.userAlreadyInContact() = UserAlreadyInContact;
   const factory HelperExceptions.userNotInContact() = UserNotInContact;
+
+  const factory HelperExceptions.cantSetContactInvitationResult() = CantSetContactInvitationResult;
 }
