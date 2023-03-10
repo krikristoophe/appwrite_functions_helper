@@ -11,4 +11,5 @@ _$_TwilioVariables _$$_TwilioVariablesFromJson(Map<String, dynamic> json) =>
       accountSid: json['TWILIO_ACCOUNT_SID'] as String,
       apiKey: json['TWILIO_API_KEY'] as String,
       sender: json['TWILIO_SENDER'] as String,
+      host: json['TWILIO_HOST'] as String?,
     );

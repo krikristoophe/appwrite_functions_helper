@@ -66,3 +66,7 @@
 ## 1.0.16
 
 - add email already used exception
+
+## 1.0.17
+
+- add twilio host variable

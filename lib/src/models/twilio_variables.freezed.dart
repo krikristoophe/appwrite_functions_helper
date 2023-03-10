@@ -26,6 +26,8 @@ mixin _$TwilioVariables {
   String get apiKey => throw _privateConstructorUsedError;
   @JsonKey(name: 'TWILIO_SENDER')
   String get sender => throw _privateConstructorUsedError;
+  @JsonKey(name: 'TWILIO_HOST')
+  String? get host => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $TwilioVariablesCopyWith<TwilioVariables> get copyWith =>
@@ -41,7 +43,8 @@ abstract class $TwilioVariablesCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'TWILIO_ACCOUNT_SID') String accountSid,
       @JsonKey(name: 'TWILIO_API_KEY') String apiKey,
-      @JsonKey(name: 'TWILIO_SENDER') String sender});
+      @JsonKey(name: 'TWILIO_SENDER') String sender,
+      @JsonKey(name: 'TWILIO_HOST') String? host});
 }
 
 /// @nodoc
@@ -60,6 +63,7 @@ class _$TwilioVariablesCopyWithImpl<$Res, $Val extends TwilioVariables>
     Object? accountSid = null,
     Object? apiKey = null,
     Object? sender = null,
+    Object? host = freezed,
   }) {
     return _then(_value.copyWith(
       accountSid: null == accountSid
@@ -74,6 +78,10 @@ class _$TwilioVariablesCopyWithImpl<$Res, $Val extends TwilioVariables>
           ? _value.sender
           : sender // ignore: cast_nullable_to_non_nullable
               as String,
+      host: freezed == host
+          ? _value.host
+          : host // ignore: cast_nullable_to_non_nullable
+              as String?,
     ) as $Val);
   }
 }
@@ -89,7 +97,8 @@ abstract class _$$_TwilioVariablesCopyWith<$Res>
   $Res call(
       {@JsonKey(name: 'TWILIO_ACCOUNT_SID') String accountSid,
       @JsonKey(name: 'TWILIO_API_KEY') String apiKey,
-      @JsonKey(name: 'TWILIO_SENDER') String sender});
+      @JsonKey(name: 'TWILIO_SENDER') String sender,
+      @JsonKey(name: 'TWILIO_HOST') String? host});
 }
 
 /// @nodoc
@@ -106,6 +115,7 @@ class __$$_TwilioVariablesCopyWithImpl<$Res>
     Object? accountSid = null,
     Object? apiKey = null,
     Object? sender = null,
+    Object? host = freezed,
   }) {
     return _then(_$_TwilioVariables(
       accountSid: null == accountSid
@@ -120,6 +130,10 @@ class __$$_TwilioVariablesCopyWithImpl<$Res>
           ? _value.sender
           : sender // ignore: cast_nullable_to_non_nullable
               as String,
+      host: freezed == host
+          ? _value.host
+          : host // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -130,7 +144,8 @@ class _$_TwilioVariables extends _TwilioVariables {
   const _$_TwilioVariables(
       {@JsonKey(name: 'TWILIO_ACCOUNT_SID') required this.accountSid,
       @JsonKey(name: 'TWILIO_API_KEY') required this.apiKey,
-      @JsonKey(name: 'TWILIO_SENDER') required this.sender})
+      @JsonKey(name: 'TWILIO_SENDER') required this.sender,
+      @JsonKey(name: 'TWILIO_HOST') this.host})
       : super._();
 
   factory _$_TwilioVariables.fromJson(Map<String, dynamic> json) =>
@@ -145,10 +160,13 @@ class _$_TwilioVariables extends _TwilioVariables {
   @override
   @JsonKey(name: 'TWILIO_SENDER')
   final String sender;
+  @override
+  @JsonKey(name: 'TWILIO_HOST')
+  final String? host;
 
   @override
   String toString() {
-    return 'TwilioVariables(accountSid: $accountSid, apiKey: $apiKey, sender: $sender)';
+    return 'TwilioVariables(accountSid: $accountSid, apiKey: $apiKey, sender: $sender, host: $host)';
   }
 
   @override
@@ -159,12 +177,14 @@ class _$_TwilioVariables extends _TwilioVariables {
             (identical(other.accountSid, accountSid) ||
                 other.accountSid == accountSid) &&
             (identical(other.apiKey, apiKey) || other.apiKey == apiKey) &&
-            (identical(other.sender, sender) || other.sender == sender));
+            (identical(other.sender, sender) || other.sender == sender) &&
+            (identical(other.host, host) || other.host == host));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, accountSid, apiKey, sender);
+  int get hashCode =>
+      Object.hash(runtimeType, accountSid, apiKey, sender, host);
 
   @JsonKey(ignore: true)
   @override
@@ -175,12 +195,10 @@ class _$_TwilioVariables extends _TwilioVariables {
 
 abstract class _TwilioVariables extends TwilioVariables {
   const factory _TwilioVariables(
-      {@JsonKey(name: 'TWILIO_ACCOUNT_SID')
-          required final String accountSid,
-      @JsonKey(name: 'TWILIO_API_KEY')
-          required final String apiKey,
-      @JsonKey(name: 'TWILIO_SENDER')
-          required final String sender}) = _$_TwilioVariables;
+      {@JsonKey(name: 'TWILIO_ACCOUNT_SID') required final String accountSid,
+      @JsonKey(name: 'TWILIO_API_KEY') required final String apiKey,
+      @JsonKey(name: 'TWILIO_SENDER') required final String sender,
+      @JsonKey(name: 'TWILIO_HOST') final String? host}) = _$_TwilioVariables;
   const _TwilioVariables._() : super._();
 
   factory _TwilioVariables.fromJson(Map<String, dynamic> json) =
@@ -195,6 +213,9 @@ abstract class _TwilioVariables extends TwilioVariables {
   @override
   @JsonKey(name: 'TWILIO_SENDER')
   String get sender;
+  @override
+  @JsonKey(name: 'TWILIO_HOST')
+  String? get host;
   @override
   @JsonKey(ignore: true)
   _$$_TwilioVariablesCopyWith<_$_TwilioVariables> get copyWith =>
